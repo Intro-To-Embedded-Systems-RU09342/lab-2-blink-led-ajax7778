@@ -8,7 +8,7 @@ is visible to a standard human. I really hope that you take this further and per
 For this portion of the lab, the only thing that needed to happen was to add the second LED in to the initial simple blink code and 
 change the delay. The LED on the G2 that was used in the Simple Blink is P1.0. The second LED used for this portion of the project is 
 located at P1.6. All that needed to be done to blink both LEDs was to set P1.6 to an output direction using the same method as the 
-original code, and toggle it, also using the same method. The delay for this board was set to 50000.
+original code, and toggle it, also using the same method. The delay cycles were 200000 and 100000, making the red LED blink faster than the green LED.
 
 ## MSP430FR6989
 For this board, the code for blinking 1 LED was modified slightly to accommodate for a second LED. The original code attained from the 
