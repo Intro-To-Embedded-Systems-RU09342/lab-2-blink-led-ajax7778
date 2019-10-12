@@ -77,8 +77,12 @@ int main(void)
     P1OUT ^= 0x01;                          // Toggle P1.0 using exclusive-OR
     P1OUT ^= 0x60;                          // Toggle P1.6 using exclusive-OR
 
-    i = 50000;                              // Delay
-    do (i--);
-    while (i != 0);
+    while(1)
+    {
+        P1OUT ^= (BIT0 | BIT6);
+        __delay_cycles(200000); //delay
+        P1OUT ^= (BIT6);
+        __delay_cycles(100000); //delay
+    }
   }
 }
